@@ -1,0 +1,23 @@
+{
+  "name": "NuWaPatch",
+  "version": "0.1.0",
+  "summary": "Bug Fix OnLine.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/liyizhen/NuWaPatch",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "liyizhen": "402376080@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/liyizhen/NuWaPatch.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "NuWaPatch/Classes/**/*",
+  "vendored_libraries": "NuWaPatch/Classes/libffi/libffi.a"
+}

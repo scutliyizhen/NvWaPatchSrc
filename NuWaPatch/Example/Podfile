@@ -1,0 +1,12 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'NuWaPatch_Example' do
+  pod 'NuWaPatch', :path => '../'
+  #pod 'LibFFI', :path => '../../LibFFI/'
+  
+#  target 'NaWaPatch_Tests' do
+#    inherit! :search_paths
+#  end
+end

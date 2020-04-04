@@ -1,0 +1,808 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
+		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
+		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
+		6003F598195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F596195388D20070C39A /* InfoPlist.strings */; };
+		6003F59A195388D20070C39A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F599195388D20070C39A /* main.m */; };
+		6003F59E195388D20070C39A /* NWAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* NWAppDelegate.m */; };
+		6003F5A7195388D20070C39A /* NWViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5A6195388D20070C39A /* NWViewController.m */; };
+		6003F5A9195388D20070C39A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5A8195388D20070C39A /* Images.xcassets */; };
+		6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F5AF195388D20070C39A /* XCTest.framework */; };
+		6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
+		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
+		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
+		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
+		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
+		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		8FB6DEC927E26436E91E76DF /* Pods_NuWaPatch_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 509773049AD8E9649211E4FE /* Pods_NuWaPatch_Example.framework */; };
+		9807C3BE22FEDF9D0002380B /* NWMethodSignature.m in Sources */ = {isa = PBXBuildFile; fileRef = 9807C3AE22FEDF9D0002380B /* NWMethodSignature.m */; };
+		9807C3BF22FEDF9D0002380B /* NWObjCMethodSignature.m in Sources */ = {isa = PBXBuildFile; fileRef = 9807C3AF22FEDF9D0002380B /* NWObjCMethodSignature.m */; };
+		9807C3C022FEDF9D0002380B /* NWMethodReturnValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 9807C3B222FEDF9D0002380B /* NWMethodReturnValue.m */; };
+		9807C3C122FEDF9D0002380B /* NWJSMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 9807C3B422FEDF9D0002380B /* NWJSMethod.m */; };
+		9807C3C222FEDF9D0002380B /* NWMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 9807C3B722FEDF9D0002380B /* NWMethod.m */; };
+		9807C3C322FEDF9D0002380B /* NWObjCMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 9807C3B822FEDF9D0002380B /* NWObjCMethod.m */; };
+		9807C3C422FEDF9D0002380B /* NWMethodArgument.m in Sources */ = {isa = PBXBuildFile; fileRef = 9807C3BD22FEDF9D0002380B /* NWMethodArgument.m */; };
+		9811020122FE8BA900A5F927 /* NWDefineDSLParse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9811020022FE8BA900A5F927 /* NWDefineDSLParse.swift */; };
+		9831EE7D22F3436A000D95E1 /* NuWaPatch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9831EE7C22F3436A000D95E1 /* NuWaPatch.framework */; };
+		987AADD622FBE6770088FE0A /* NWObjCHookInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 987AADBE22FBE6770088FE0A /* NWObjCHookInfo.m */; };
+		987AADD722FBE6770088FE0A /* NWFuncHookInfoPool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987AADBF22FBE6770088FE0A /* NWFuncHookInfoPool.swift */; };
+		987AADD822FBE6770088FE0A /* NWHookInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 987AADC122FBE6770088FE0A /* NWHookInfo.m */; };
+		987AADD922FBE6770088FE0A /* NWFuncHook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987AADC222FBE6770088FE0A /* NWFuncHook.swift */; };
+		987AADDA22FBE6770088FE0A /* NWUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 987AADC422FBE6770088FE0A /* NWUtils.m */; };
+		987AADDB22FBE6770088FE0A /* NWJSDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987AADC722FBE6770088FE0A /* NWJSDownloader.swift */; };
+		987AADDC22FBE6770088FE0A /* NWJSCoreBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987AADC822FBE6770088FE0A /* NWJSCoreBridge.swift */; };
+		987AADDD22FBE6770088FE0A /* NWJSEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987AADC922FBE6770088FE0A /* NWJSEngine.swift */; };
+		987AADDE22FBE6770088FE0A /* NWJSBridgeContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987AADCA22FBE6770088FE0A /* NWJSBridgeContext.swift */; };
+		987AADE722FBEA030088FE0A /* NWStateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 987AADE622FBEA030088FE0A /* NWStateView.m */; };
+		987AADEA22FBEA180088FE0A /* NWButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 987AADE922FBEA180088FE0A /* NWButtonView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6003F5B3195388D20070C39A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6003F582195388D10070C39A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6003F589195388D20070C39A;
+			remoteInfo = NuWaPatch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		07242E5F024E58D39E8BC445 /* NuWaPatch.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = NuWaPatch.podspec; path = ../NuWaPatch.podspec; sourceTree = "<group>"; };
+		188D8369A18C8EB0E2DB31AA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		509773049AD8E9649211E4FE /* Pods_NuWaPatch_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NuWaPatch_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		53D8F3083AC8D25CF2527B50 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		6003F58A195388D20070C39A /* NuWaPatch_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NuWaPatch_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		6003F591195388D20070C39A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		6003F595195388D20070C39A /* NuWaPatch-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NuWaPatch-Info.plist"; sourceTree = "<group>"; };
+		6003F597195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6003F599195388D20070C39A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6003F59B195388D20070C39A /* NuWaPatch-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NuWaPatch-Prefix.pch"; sourceTree = "<group>"; };
+		6003F59C195388D20070C39A /* NWAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NWAppDelegate.h; sourceTree = "<group>"; };
+		6003F59D195388D20070C39A /* NWAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NWAppDelegate.m; sourceTree = "<group>"; };
+		6003F5A5195388D20070C39A /* NWViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NWViewController.h; sourceTree = "<group>"; };
+		6003F5A6195388D20070C39A /* NWViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NWViewController.m; sourceTree = "<group>"; };
+		6003F5A8195388D20070C39A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		6003F5AE195388D20070C39A /* NuWaPatch_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NuWaPatch_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		6003F5B7195388D20070C39A /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
+		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
+		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
+		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9807C3AC22FEDF9D0002380B /* NWMethodSignature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NWMethodSignature.h; sourceTree = "<group>"; };
+		9807C3AD22FEDF9D0002380B /* NWObjCMethodSignature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NWObjCMethodSignature.h; sourceTree = "<group>"; };
+		9807C3AE22FEDF9D0002380B /* NWMethodSignature.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NWMethodSignature.m; sourceTree = "<group>"; };
+		9807C3AF22FEDF9D0002380B /* NWObjCMethodSignature.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NWObjCMethodSignature.m; sourceTree = "<group>"; };
+		9807C3B122FEDF9D0002380B /* NWMethodReturnValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NWMethodReturnValue.h; sourceTree = "<group>"; };
+		9807C3B222FEDF9D0002380B /* NWMethodReturnValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NWMethodReturnValue.m; sourceTree = "<group>"; };
+		9807C3B422FEDF9D0002380B /* NWJSMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NWJSMethod.m; sourceTree = "<group>"; };
+		9807C3B522FEDF9D0002380B /* NWJSMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NWJSMethod.h; sourceTree = "<group>"; };
+		9807C3B722FEDF9D0002380B /* NWMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NWMethod.m; sourceTree = "<group>"; };
+		9807C3B822FEDF9D0002380B /* NWObjCMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NWObjCMethod.m; sourceTree = "<group>"; };
+		9807C3B922FEDF9D0002380B /* NWMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NWMethod.h; sourceTree = "<group>"; };
+		9807C3BA22FEDF9D0002380B /* NWObjCMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NWObjCMethod.h; sourceTree = "<group>"; };
+		9807C3BC22FEDF9D0002380B /* NWMethodArgument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NWMethodArgument.h; sourceTree = "<group>"; };
+		9807C3BD22FEDF9D0002380B /* NWMethodArgument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NWMethodArgument.m; sourceTree = "<group>"; };
+		98108B4B22EC367400063B7A /* NuWaPatch_Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NuWaPatch_Example-Bridging-Header.h"; sourceTree = "<group>"; };
+		9811020022FE8BA900A5F927 /* NWDefineDSLParse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NWDefineDSLParse.swift; sourceTree = "<group>"; };
+		9831EE7C22F3436A000D95E1 /* NuWaPatch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NuWaPatch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		987AADBD22FBE6770088FE0A /* NWHookInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NWHookInfo.h; sourceTree = "<group>"; };
+		987AADBE22FBE6770088FE0A /* NWObjCHookInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NWObjCHookInfo.m; sourceTree = "<group>"; };
+		987AADBF22FBE6770088FE0A /* NWFuncHookInfoPool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NWFuncHookInfoPool.swift; sourceTree = "<group>"; };
+		987AADC022FBE6770088FE0A /* NWObjCHookInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NWObjCHookInfo.h; sourceTree = "<group>"; };
+		987AADC122FBE6770088FE0A /* NWHookInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NWHookInfo.m; sourceTree = "<group>"; };
+		987AADC222FBE6770088FE0A /* NWFuncHook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NWFuncHook.swift; sourceTree = "<group>"; };
+		987AADC422FBE6770088FE0A /* NWUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NWUtils.m; sourceTree = "<group>"; };
+		987AADC522FBE6770088FE0A /* NWUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NWUtils.h; sourceTree = "<group>"; };
+		987AADC722FBE6770088FE0A /* NWJSDownloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NWJSDownloader.swift; sourceTree = "<group>"; };
+		987AADC822FBE6770088FE0A /* NWJSCoreBridge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NWJSCoreBridge.swift; sourceTree = "<group>"; };
+		987AADC922FBE6770088FE0A /* NWJSEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NWJSEngine.swift; sourceTree = "<group>"; };
+		987AADCA22FBE6770088FE0A /* NWJSBridgeContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NWJSBridgeContext.swift; sourceTree = "<group>"; };
+		987AADE522FBEA030088FE0A /* NWStateView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NWStateView.h; sourceTree = "<group>"; };
+		987AADE622FBEA030088FE0A /* NWStateView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NWStateView.m; sourceTree = "<group>"; };
+		987AADE822FBEA180088FE0A /* NWButtonView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NWButtonView.h; sourceTree = "<group>"; };
+		987AADE922FBEA180088FE0A /* NWButtonView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NWButtonView.m; sourceTree = "<group>"; };
+		E19FA29A9F2AAC34BE16E111 /* Pods-NuWaPatch_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NuWaPatch_Example.release.xcconfig"; path = "Target Support Files/Pods-NuWaPatch_Example/Pods-NuWaPatch_Example.release.xcconfig"; sourceTree = "<group>"; };
+		FE3CF5766B5C8822E580763D /* Pods-NuWaPatch_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NuWaPatch_Example.debug.xcconfig"; path = "Target Support Files/Pods-NuWaPatch_Example/Pods-NuWaPatch_Example.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6003F587195388D20070C39A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9831EE7D22F3436A000D95E1 /* NuWaPatch.framework in Frameworks */,
+				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
+				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
+				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
+				8FB6DEC927E26436E91E76DF /* Pods_NuWaPatch_Example.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6003F5AB195388D20070C39A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
+				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
+				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6003F581195388D10070C39A = {
+			isa = PBXGroup;
+			children = (
+				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
+				6003F593195388D20070C39A /* Example for NuWaPatch */,
+				6003F5B5195388D20070C39A /* Tests */,
+				6003F58C195388D20070C39A /* Frameworks */,
+				6003F58B195388D20070C39A /* Products */,
+				FE0AD3360148CE0A5F375EB5 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		6003F58B195388D20070C39A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6003F58A195388D20070C39A /* NuWaPatch_Example.app */,
+				6003F5AE195388D20070C39A /* NuWaPatch_Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6003F58C195388D20070C39A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9831EE7C22F3436A000D95E1 /* NuWaPatch.framework */,
+				6003F58D195388D20070C39A /* Foundation.framework */,
+				6003F58F195388D20070C39A /* CoreGraphics.framework */,
+				6003F591195388D20070C39A /* UIKit.framework */,
+				6003F5AF195388D20070C39A /* XCTest.framework */,
+				509773049AD8E9649211E4FE /* Pods_NuWaPatch_Example.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6003F593195388D20070C39A /* Example for NuWaPatch */ = {
+			isa = PBXGroup;
+			children = (
+				987AADE422FBE9BB0088FE0A /* Component */,
+				987AADBB22FBE6770088FE0A /* NuWaPatchLib */,
+				6003F59C195388D20070C39A /* NWAppDelegate.h */,
+				6003F59D195388D20070C39A /* NWAppDelegate.m */,
+				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
+				6003F5A5195388D20070C39A /* NWViewController.h */,
+				6003F5A6195388D20070C39A /* NWViewController.m */,
+				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
+				6003F5A8195388D20070C39A /* Images.xcassets */,
+				6003F594195388D20070C39A /* Supporting Files */,
+				98108B4B22EC367400063B7A /* NuWaPatch_Example-Bridging-Header.h */,
+			);
+			name = "Example for NuWaPatch";
+			path = NuWaPatch;
+			sourceTree = "<group>";
+		};
+		6003F594195388D20070C39A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6003F595195388D20070C39A /* NuWaPatch-Info.plist */,
+				6003F596195388D20070C39A /* InfoPlist.strings */,
+				6003F599195388D20070C39A /* main.m */,
+				6003F59B195388D20070C39A /* NuWaPatch-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6003F5B5195388D20070C39A /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				6003F5BB195388D20070C39A /* Tests.m */,
+				6003F5B6195388D20070C39A /* Supporting Files */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		6003F5B6195388D20070C39A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6003F5B7195388D20070C39A /* Tests-Info.plist */,
+				6003F5B8195388D20070C39A /* InfoPlist.strings */,
+				606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		60FF7A9C1954A5C5007DD14C /* Podspec Metadata */ = {
+			isa = PBXGroup;
+			children = (
+				07242E5F024E58D39E8BC445 /* NuWaPatch.podspec */,
+				53D8F3083AC8D25CF2527B50 /* README.md */,
+				188D8369A18C8EB0E2DB31AA /* LICENSE */,
+			);
+			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		9807C3AA22FEDF9D0002380B /* Method */ = {
+			isa = PBXGroup;
+			children = (
+				9807C3AB22FEDF9D0002380B /* Signature */,
+				9807C3B022FEDF9D0002380B /* ReturnValue */,
+				9807C3B322FEDF9D0002380B /* JSCall */,
+				9807C3B622FEDF9D0002380B /* Method */,
+				9807C3BB22FEDF9D0002380B /* Arguments */,
+			);
+			path = Method;
+			sourceTree = "<group>";
+		};
+		9807C3AB22FEDF9D0002380B /* Signature */ = {
+			isa = PBXGroup;
+			children = (
+				9807C3AC22FEDF9D0002380B /* NWMethodSignature.h */,
+				9807C3AD22FEDF9D0002380B /* NWObjCMethodSignature.h */,
+				9807C3AE22FEDF9D0002380B /* NWMethodSignature.m */,
+				9807C3AF22FEDF9D0002380B /* NWObjCMethodSignature.m */,
+			);
+			path = Signature;
+			sourceTree = "<group>";
+		};
+		9807C3B022FEDF9D0002380B /* ReturnValue */ = {
+			isa = PBXGroup;
+			children = (
+				9807C3B122FEDF9D0002380B /* NWMethodReturnValue.h */,
+				9807C3B222FEDF9D0002380B /* NWMethodReturnValue.m */,
+			);
+			path = ReturnValue;
+			sourceTree = "<group>";
+		};
+		9807C3B322FEDF9D0002380B /* JSCall */ = {
+			isa = PBXGroup;
+			children = (
+				9807C3B422FEDF9D0002380B /* NWJSMethod.m */,
+				9807C3B522FEDF9D0002380B /* NWJSMethod.h */,
+			);
+			path = JSCall;
+			sourceTree = "<group>";
+		};
+		9807C3B622FEDF9D0002380B /* Method */ = {
+			isa = PBXGroup;
+			children = (
+				9807C3B722FEDF9D0002380B /* NWMethod.m */,
+				9807C3B822FEDF9D0002380B /* NWObjCMethod.m */,
+				9807C3B922FEDF9D0002380B /* NWMethod.h */,
+				9807C3BA22FEDF9D0002380B /* NWObjCMethod.h */,
+			);
+			path = Method;
+			sourceTree = "<group>";
+		};
+		9807C3BB22FEDF9D0002380B /* Arguments */ = {
+			isa = PBXGroup;
+			children = (
+				9807C3BC22FEDF9D0002380B /* NWMethodArgument.h */,
+				9807C3BD22FEDF9D0002380B /* NWMethodArgument.m */,
+			);
+			path = Arguments;
+			sourceTree = "<group>";
+		};
+		981101FD22FE8A4700A5F927 /* DSLPrase */ = {
+			isa = PBXGroup;
+			children = (
+				9811020022FE8BA900A5F927 /* NWDefineDSLParse.swift */,
+			);
+			path = DSLPrase;
+			sourceTree = "<group>";
+		};
+		987AADBB22FBE6770088FE0A /* NuWaPatchLib */ = {
+			isa = PBXGroup;
+			children = (
+				987AADC322FBE6770088FE0A /* Utils */,
+				9807C3AA22FEDF9D0002380B /* Method */,
+				981101FD22FE8A4700A5F927 /* DSLPrase */,
+				987AADC622FBE6770088FE0A /* JSEngine */,
+				987AADBC22FBE6770088FE0A /* HookEngine */,
+			);
+			path = NuWaPatchLib;
+			sourceTree = "<group>";
+		};
+		987AADBC22FBE6770088FE0A /* HookEngine */ = {
+			isa = PBXGroup;
+			children = (
+				987AADBD22FBE6770088FE0A /* NWHookInfo.h */,
+				987AADC122FBE6770088FE0A /* NWHookInfo.m */,
+				987AADC022FBE6770088FE0A /* NWObjCHookInfo.h */,
+				987AADBE22FBE6770088FE0A /* NWObjCHookInfo.m */,
+				987AADC222FBE6770088FE0A /* NWFuncHook.swift */,
+				987AADBF22FBE6770088FE0A /* NWFuncHookInfoPool.swift */,
+			);
+			path = HookEngine;
+			sourceTree = "<group>";
+		};
+		987AADC322FBE6770088FE0A /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				987AADC522FBE6770088FE0A /* NWUtils.h */,
+				987AADC422FBE6770088FE0A /* NWUtils.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		987AADC622FBE6770088FE0A /* JSEngine */ = {
+			isa = PBXGroup;
+			children = (
+				987AADC922FBE6770088FE0A /* NWJSEngine.swift */,
+				987AADC722FBE6770088FE0A /* NWJSDownloader.swift */,
+				987AADC822FBE6770088FE0A /* NWJSCoreBridge.swift */,
+				987AADCA22FBE6770088FE0A /* NWJSBridgeContext.swift */,
+			);
+			path = JSEngine;
+			sourceTree = "<group>";
+		};
+		987AADE422FBE9BB0088FE0A /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				987AADE522FBEA030088FE0A /* NWStateView.h */,
+				987AADE622FBEA030088FE0A /* NWStateView.m */,
+				987AADE822FBEA180088FE0A /* NWButtonView.h */,
+				987AADE922FBEA180088FE0A /* NWButtonView.m */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		FE0AD3360148CE0A5F375EB5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FE3CF5766B5C8822E580763D /* Pods-NuWaPatch_Example.debug.xcconfig */,
+				E19FA29A9F2AAC34BE16E111 /* Pods-NuWaPatch_Example.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6003F589195388D20070C39A /* NuWaPatch_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "NuWaPatch_Example" */;
+			buildPhases = (
+				72499258D58587BB08359B84 /* [CP] Check Pods Manifest.lock */,
+				6003F586195388D20070C39A /* Sources */,
+				6003F587195388D20070C39A /* Frameworks */,
+				6003F588195388D20070C39A /* Resources */,
+				23FCDD26B606A7EB73D6E63F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NuWaPatch_Example;
+			productName = NuWaPatch;
+			productReference = 6003F58A195388D20070C39A /* NuWaPatch_Example.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6003F5AD195388D20070C39A /* NuWaPatch_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "NuWaPatch_Tests" */;
+			buildPhases = (
+				6003F5AA195388D20070C39A /* Sources */,
+				6003F5AB195388D20070C39A /* Frameworks */,
+				6003F5AC195388D20070C39A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6003F5B4195388D20070C39A /* PBXTargetDependency */,
+			);
+			name = NuWaPatch_Tests;
+			productName = NuWaPatchTests;
+			productReference = 6003F5AE195388D20070C39A /* NuWaPatch_Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6003F582195388D10070C39A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = NW;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = liyizhen;
+				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						LastSwiftMigration = 1030;
+					};
+					6003F5AD195388D20070C39A = {
+						TestTargetID = 6003F589195388D20070C39A;
+					};
+				};
+			};
+			buildConfigurationList = 6003F585195388D10070C39A /* Build configuration list for PBXProject "NuWaPatch" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+				Base,
+			);
+			mainGroup = 6003F581195388D10070C39A;
+			productRefGroup = 6003F58B195388D20070C39A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6003F589195388D20070C39A /* NuWaPatch_Example */,
+				6003F5AD195388D20070C39A /* NuWaPatch_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6003F588195388D20070C39A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
+				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
+				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
+				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6003F5AC195388D20070C39A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		23FCDD26B606A7EB73D6E63F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NuWaPatch_Example/Pods-NuWaPatch_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/NuWaPatch/NuWaPatch.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NuWaPatch.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NuWaPatch_Example/Pods-NuWaPatch_Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		72499258D58587BB08359B84 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NuWaPatch_Example-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6003F586195388D20070C39A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				987AADDB22FBE6770088FE0A /* NWJSDownloader.swift in Sources */,
+				987AADDC22FBE6770088FE0A /* NWJSCoreBridge.swift in Sources */,
+				987AADDE22FBE6770088FE0A /* NWJSBridgeContext.swift in Sources */,
+				6003F59E195388D20070C39A /* NWAppDelegate.m in Sources */,
+				9807C3C322FEDF9D0002380B /* NWObjCMethod.m in Sources */,
+				9807C3BF22FEDF9D0002380B /* NWObjCMethodSignature.m in Sources */,
+				987AADEA22FBEA180088FE0A /* NWButtonView.m in Sources */,
+				987AADD822FBE6770088FE0A /* NWHookInfo.m in Sources */,
+				9807C3BE22FEDF9D0002380B /* NWMethodSignature.m in Sources */,
+				987AADDD22FBE6770088FE0A /* NWJSEngine.swift in Sources */,
+				987AADDA22FBE6770088FE0A /* NWUtils.m in Sources */,
+				9807C3C122FEDF9D0002380B /* NWJSMethod.m in Sources */,
+				9811020122FE8BA900A5F927 /* NWDefineDSLParse.swift in Sources */,
+				6003F5A7195388D20070C39A /* NWViewController.m in Sources */,
+				987AADE722FBEA030088FE0A /* NWStateView.m in Sources */,
+				6003F59A195388D20070C39A /* main.m in Sources */,
+				9807C3C422FEDF9D0002380B /* NWMethodArgument.m in Sources */,
+				9807C3C222FEDF9D0002380B /* NWMethod.m in Sources */,
+				987AADD922FBE6770088FE0A /* NWFuncHook.swift in Sources */,
+				9807C3C022FEDF9D0002380B /* NWMethodReturnValue.m in Sources */,
+				987AADD622FBE6770088FE0A /* NWObjCHookInfo.m in Sources */,
+				987AADD722FBE6770088FE0A /* NWFuncHookInfoPool.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6003F5AA195388D20070C39A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6003F5BC195388D20070C39A /* Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6003F5B4195388D20070C39A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6003F589195388D20070C39A /* NuWaPatch_Example */;
+			targetProxy = 6003F5B3195388D20070C39A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6003F596195388D20070C39A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6003F597195388D20070C39A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		6003F5B8195388D20070C39A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6003F5B9195388D20070C39A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				71719F9E1E33DC2100824A3D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6003F5BD195388D20070C39A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6003F5BE195388D20070C39A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6003F5C0195388D20070C39A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE3CF5766B5C8822E580763D /* Pods-NuWaPatch_Example.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NuWaPatch/NuWaPatch-Prefix.pch";
+				INFOPLIST_FILE = "NuWaPatch/NuWaPatch-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)/**",
+					"$(PROJECT_DIR)/libffi/**",
+				);
+				MODULE_NAME = ExampleApp;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-framework",
+					"\"NuWaPatch\"",
+					"-l\"ffi\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "NuWaPatch/NuWaPatch_Example-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		6003F5C1195388D20070C39A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E19FA29A9F2AAC34BE16E111 /* Pods-NuWaPatch_Example.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NuWaPatch/NuWaPatch-Prefix.pch";
+				INFOPLIST_FILE = "NuWaPatch/NuWaPatch-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)/**",
+					"$(PROJECT_DIR)/libffi/**",
+				);
+				MODULE_NAME = ExampleApp;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-framework",
+					"\"NuWaPatch\"",
+					"-l\"ffi\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "NuWaPatch/NuWaPatch_Example-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		6003F5C3195388D20070C39A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tests/Tests-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Tests/Tests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NuWaPatch_Example.app/NuWaPatch_Example";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		6003F5C4195388D20070C39A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tests/Tests-Prefix.pch";
+				INFOPLIST_FILE = "Tests/Tests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NuWaPatch_Example.app/NuWaPatch_Example";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6003F585195388D10070C39A /* Build configuration list for PBXProject "NuWaPatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6003F5BD195388D20070C39A /* Debug */,
+				6003F5BE195388D20070C39A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "NuWaPatch_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6003F5C0195388D20070C39A /* Debug */,
+				6003F5C1195388D20070C39A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "NuWaPatch_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6003F5C3195388D20070C39A /* Debug */,
+				6003F5C4195388D20070C39A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6003F582195388D10070C39A /* Project object */;
+}

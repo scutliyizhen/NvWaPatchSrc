@@ -1,0 +1,6 @@
+framework module NuWaPatch {
+  umbrella header "NuWaPatch-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "jsruntime",
+  "version": "1.0.0",
+  "description": "",
+  "main": "NuWaPatchTestDemo.js",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --config  ./config/webpack.config.dev.js  --color --progress",
+    "build": "cross-env NODE_ENV=production webpack --config ./config/webpack.config.prod.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "clean-webpack-plugin": "^3.0.0",
+    "cross-env": "^5.2.0",
+    "webpack": "^4.39.2",
+    "webpack-cli": "^3.3.6",
+    "webpack-dev-server": "^3.8.0",
+    "webpack-merge": "^4.2.1"
+  }
+}

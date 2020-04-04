@@ -1,0 +1,16 @@
+PODS:
+  - NuWaPatch (0.1.0)
+
+DEPENDENCIES:
+  - NuWaPatch (from `../`)
+
+EXTERNAL SOURCES:
+  NuWaPatch:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  NuWaPatch: b480b4ff020f9a09603d273cd3f129470d9915a0
+
+PODFILE CHECKSUM: 1e1d41e6d60f77f076d70137c94fc88c2dac46e3
+
+COCOAPODS: 1.7.2

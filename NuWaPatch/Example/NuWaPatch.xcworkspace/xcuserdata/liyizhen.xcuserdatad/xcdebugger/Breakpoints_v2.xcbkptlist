@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "1C769DBE-E7DF-4335-9AA3-9E992969A1DC"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BCFFE515-6B33-404F-9D1B-4F02F4AB510F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NuWaPatch/NuWaPatchLib/OCLayer/NWObjCMethod.m"
+            timestampString = "586928554.258929"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "82"
+            endingLineNumber = "82"
+            landmarkName = "-setInvocationArgument:argumentType:argument:index:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CE7C1041-81B3-4059-9068-7B0757AD9CA6"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NuWaPatch/NuWaPatchLib/Method/NWMethodArgument.m"
+            timestampString = "587128598.240393"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "73"
+            endingLineNumber = "73"
+            landmarkName = "-setArgumentValueInvocation:index:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "215C2B07-EB43-4401-8041-98D640FC4D20"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NuWaPatch/NuWaPatchLib/HookEngine/NWFuncHookInfoPool.swift"
+            timestampString = "587197691.968087"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "getHookInfoPool(hookCls:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "215C2B07-EB43-4401-8041-98D640FC4D20 - 8aed09c65c4e7931"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static NuWaPatch_Example.NWFuncHookInfoPool.getHookInfoPool(hookCls: Swift.AnyObject.Type) -&gt; Swift.Optional&lt;NuWaPatch_Example.NWFuncHookInfoPool&gt;"
+                  moduleName = "NuWaPatch_Example"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/liyizhen/Desktop/Studing/NuWaPatch/NuWaPatch/Example/NuWaPatch/NuWaPatchLib/HookEngine/NWFuncHookInfoPool.swift"
+                  timestampString = "587709168.2574019"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "87">
+               </Location>
+               <Location
+                  uuid = "215C2B07-EB43-4401-8041-98D640FC4D20 - 43eb7314e799f996"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in static NuWaPatch_Example.NWFuncHookInfoPool.getHookInfoPool(hookCls: Swift.AnyObject.Type) -&gt; Swift.Optional&lt;NuWaPatch_Example.NWFuncHookInfoPool&gt;"
+                  moduleName = "NuWaPatch_Example"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/liyizhen/Desktop/Studing/NuWaPatch/NuWaPatch/Example/NuWaPatch/NuWaPatchLib/HookEngine/NWFuncHookInfoPool.swift"
+                  timestampString = "587709168.259787"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "115">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "72C5C8BE-9DD4-486D-8FA0-AD8136A478E2"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NuWaPatch/NuWaPatchLib/HookEngine/NWFuncHookInfoPool.swift"
+            timestampString = "587197691.968161"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "setHookInfoPool(hookCls:hookInfoPool:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "72C5C8BE-9DD4-486D-8FA0-AD8136A478E2 - 3994e7b446109ad3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static NuWaPatch_Example.NWFuncHookInfoPool.setHookInfoPool(hookCls: Swift.AnyObject.Type, hookInfoPool: NuWaPatch_Example.NWFuncHookInfoPool) -&gt; ()"
+                  moduleName = "NuWaPatch_Example"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/liyizhen/Desktop/Studing/NuWaPatch/NuWaPatch/Example/NuWaPatch/NuWaPatchLib/HookEngine/NWFuncHookInfoPool.swift"
+                  timestampString = "587709168.265004"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "48"
+                  endingLineNumber = "48"
+                  offsetFromSymbolStart = "49">
+               </Location>
+               <Location
+                  uuid = "72C5C8BE-9DD4-486D-8FA0-AD8136A478E2 - c24aa24210f1d2d1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in static NuWaPatch_Example.NWFuncHookInfoPool.setHookInfoPool(hookCls: Swift.AnyObject.Type, hookInfoPool: NuWaPatch_Example.NWFuncHookInfoPool) -&gt; ()"
+                  moduleName = "NuWaPatch_Example"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/liyizhen/Desktop/Studing/NuWaPatch/NuWaPatch/Example/NuWaPatch/NuWaPatchLib/HookEngine/NWFuncHookInfoPool.swift"
+                  timestampString = "587709168.266854"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "49"
+                  endingLineNumber = "49"
+                  offsetFromSymbolStart = "35">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "50B5EB4A-AD10-40B7-A916-5F7133328461"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NuWaPatch/NuWaPatchLib/JSEngine/NWJSCoreBridge.swift"
+            timestampString = "587709168.166537"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "initContext()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
